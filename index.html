@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wakil Thakur | Process & Automation Expert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Merriweather', serif;
+        }
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+        /* Custom violet accent color for highlights */
+        .text-accent {
+            color: #8b5cf6; /* violet-500 */
+        }
+        .bg-accent {
+            background-color: #8b5cf6; /* violet-500 */
+        }
+        .hover\:bg-accent-dark:hover {
+            background-color: #7c3aed; /* violet-600 */
+        }
+        .border-accent {
+            border-color: #8b5cf6; /* violet-500 */
+        }
+        .hamburger-line {
+            transition: all 0.3s;
+        }
+        .hamburger-open .hamburger-line-top {
+            transform: rotate(45deg) translateY(6px);
+        }
+        .hamburger-open .hamburger-line-middle {
+            opacity: 0;
+        }
+        .hamburger-open .hamburger-line-bottom {
+            transform: rotate(-45deg) translateY(-6px);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-gray-300">
+
+    <!-- Header & Navigation -->
+    <header class="bg-slate-900/80 backdrop-blur-lg sticky top-0 z-50 border-b border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center relative">
+            <!-- Name on Desktop -->
+            <div class="hidden md:block text-2xl font-bold text-white">Wakil Thakur</div>
+            
+            <!-- Centered Name on Mobile -->
+            <div class="md:hidden text-xl font-bold text-white absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">Wakil Thakur</div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="#about" class="text-gray-300 hover:text-accent transition">About</a>
+                <a href="#achievements" class="text-gray-300 hover:text-accent transition">Achievements</a>
+                <a href="#portfolio" class="text-gray-300 hover:text-accent transition">Portfolio</a>
+                <a href="#experience" class="text-gray-300 hover:text-accent transition">Experience</a>
+                <a href="#contact" class="bg-accent text-white px-4 py-2 rounded-full hover:bg-accent-dark transition font-semibold">Contact</a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="z-30 block hamburger">
+                    <span class="hamburger-line hamburger-line-top block w-6 h-0.5 bg-white"></span>
+                    <span class="hamburger-line hamburger-line-middle block w-6 h-0.5 bg-white mt-1"></span>
+                    <span class="hamburger-line hamburger-line-bottom block w-6 h-0.5 bg-white mt-1"></span>
+                </button>
+            </div>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div id="menu" class="hidden md:hidden absolute top-full left-0 w-full bg-slate-900 border-t border-slate-800">
+            <a href="#about" class="block py-3 px-6 text-center text-gray-300 hover:bg-slate-800 hover:text-accent transition">About</a>
+            <a href="#achievements" class="block py-3 px-6 text-center text-gray-300 hover:bg-slate-800 hover:text-accent transition">Achievements</a>
+            <a href="#portfolio" class="block py-3 px-6 text-center text-gray-300 hover:bg-slate-800 hover:text-accent transition">Portfolio</a>
+            <a href="#experience" class="block py-3 px-6 text-center text-gray-300 hover:bg-slate-800 hover:text-accent transition">Experience</a>
+            <a href="#contact" class="block py-3 px-6 text-center text-gray-300 hover:bg-slate-800 hover:text-accent transition">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-20 md:py-32">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-tight">I Turn Operational Complexity <br> Into Simple, Automated Systems.</h1>
+            <p class="mt-6 max-w-2xl mx-auto text-lg text-slate-400">My career started by breaking a sales record after I fixed a broken process. I bring that same mindset to operations, building the custom tools and dashboards that teams rely on to save money and improve customer satisfaction.</p>
+            <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="mailto:aryanwakilsamar@gmail.com" class="bg-accent text-white font-semibold px-8 py-3 rounded-full hover:bg-accent-dark transition-transform transform hover:scale-105 w-full sm:w-auto">Get In Touch</a>
+                <a href="#portfolio" class="bg-slate-800 text-white font-semibold px-8 py-3 rounded-full border border-slate-700 hover:bg-slate-700 transition-transform transform hover:scale-105 w-full sm:w-auto">View My Work</a>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-16 md:py-24">
+             <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-white">About Me</h2>
+                <p class="mt-4 text-slate-400">
+                    I'm a business-focused problem solver who bridges the gap between operational challenges and technical solutions. For the last 2+ years, my passion has been to see a business problem, find its root cause in the data, and then build the exact tool or process needed to fix it. The applications I've built aren't just technical projects; they're business solutions that have significantly decreased turnaround time (TAT), leading to faster resolutions and a higher rate of customer satisfaction.
+                </p>
+            </div>
+        </section>
+
+        <!-- Key Achievements Section -->
+        <section id="achievements" class="py-16 md:py-24 bg-slate-800 rounded-2xl">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-white">Key Achievements</h2>
+            </div>
+            <div class="mt-12 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-slate-900 p-8 rounded-xl text-center border border-slate-700">
+                    <div class="text-accent text-4xl font-extrabold">₹1 Crore+</div>
+                    <h3 class="mt-2 text-xl font-bold text-white">Saved in Annual Costs</h3>
+                    <p class="mt-2 text-slate-400">Led a data-driven analysis at Flipkart by identifying and re-categorizing high-volume issues, leading to process changes that saved significant operational costs.</p>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-xl text-center border border-slate-700">
+                    <div class="text-accent text-4xl font-extrabold">₹1.4 Crore</div>
+                    <h3 class="mt-2 text-xl font-bold text-white">Generated in Sales</h3>
+                    <p class="mt-2 text-slate-400">At Globiva, I analyzed a flawed sales process and developed a new strategy, becoming the first to achieve this record in 2 months.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-16 md:py-24">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-white">Internal Tools Portfolio</h2>
+                <p class="mt-4 max-w-2xl mx-auto text-slate-400">I've built over 9 internal applications using Google Apps Script and the Google Workspace platform to solve real business problems. Here is a showcase of my work.</p>
+            </div>
+            <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project Card 1 -->
+                <div class="project-card group relative rounded-xl overflow-hidden border border-slate-700">
+                    <img src="https://placehold.co/600x400/1e293b/8b5cf6?text=UPI+Refund+Tool+(GIF)" alt="UPI Refund Tool GIF" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-80 opacity-0 transition-opacity duration-500 p-6 flex flex-col justify-end">
+                        <h3 class="text-white text-xl font-bold">UPI Refund VPA Search</h3>
+                        <p class="text-gray-300 mt-2 text-sm">An app that allows agents to instantly find transaction details using a VPA ID, reducing search time from minutes to seconds.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="project-card group relative rounded-xl overflow-hidden border border-slate-700">
+                    <img src="https://placehold.co/600x400/1e293b/8b5cf6?text=QR+Code+Portal+(GIF)" alt="QR Code Portal GIF" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-80 opacity-0 transition-opacity duration-500 p-6 flex flex-col justify-end">
+                        <h3 class="text-white text-xl font-bold">QR Code Refund Portal</h3>
+                        <p class="text-gray-300 mt-2 text-sm">A dedicated tool to look up complex QR-code-based refund information, simplifying a previously difficult and error-prone process.</p>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="project-card group relative rounded-xl overflow-hidden border border-slate-700">
+                    <img src="https://placehold.co/600x400/1e293b/8b5cf6?text=IFSC+Finder+(GIF)" alt="IFSC Finder GIF" class="w-full h-full object-cover transition-transform duration-500">
+                    <div class="project-overlay absolute inset-0 bg-black bg-opacity-80 opacity-0 transition-opacity duration-500 p-6 flex flex-col justify-end">
+                        <h3 class="text-white text-xl font-bold">IFSC Details Finder</h3>
+                        <p class="text-gray-300 mt-2 text-sm">A full-stack tool built to process and search a massive IFSC data file, making critical bank information instantly accessible.</p>
+                    </div>
+                </div>
+                
+                <!-- Add more project cards here... -->
+
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-16 md:py-24">
+             <div class="text-center">
+                <h2 class="text-3xl font-bold text-white">Professional Experience</h2>
+            </div>
+            <div class="mt-12 max-w-3xl mx-auto space-y-12 relative border-l-2 border-slate-700 pl-10">
+                <!-- Flipkart -->
+                <div class="relative">
+                    <div class="absolute -left-[46px] top-1 w-6 h-6 bg-accent rounded-full border-4 border-slate-900"></div>
+                    <p class="text-sm text-slate-400">[Month, Year] – Present</p>
+                    <h3 class="mt-1 text-xl font-bold text-white">Operations Analyst (MIS & WFM Executive)</h3>
+                    <p class="text-gray-300 font-medium">Flipkart (via Cogent)</p>
+                    <p class="mt-2 text-slate-400">Promoted from a CSA role within months due to my passion for solving complex operational challenges. I now design and build the internal tools and dashboards that power our team's efficiency and have reduced our ticket volume by over 1 crore.</p>
+                </div>
+                <!-- Globiva -->
+                <div class="relative">
+                     <div class="absolute -left-[46px] top-1 w-6 h-6 bg-accent rounded-full border-4 border-slate-900"></div>
+                    <p class="text-sm text-slate-400">[Start Month, Year] – [End Month, Year]</p>
+                    <h3 class="mt-1 text-xl font-bold text-white">Sales Associate (Promoted to SME)</h3>
+                    <p class="text-gray-300 font-medium">Globiva</p>
+                    <p class="mt-2 text-slate-400">After analyzing flaws in the existing sales process, I developed a new strategy that led to me becoming the first person to achieve 1.4 crore in sales in two months, leading to an informal promotion to SME.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+    <!-- Footer / Contact -->
+    <footer id="contact" class="bg-slate-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-12 text-center">
+            <h2 class="text-3xl font-bold">Let's build something great together.</h2>
+            <p class="mt-4 max-w-xl mx-auto text-slate-400">I'm actively looking for a new role where I can apply my passion for process improvement and tool development. If you think I'd be a good fit for your team, I'd love to hear from you.</p>
+            <div class="mt-8 flex justify-center items-center gap-4">
+                <p id="email-text" class="bg-slate-700 text-white font-semibold px-6 py-3 rounded-full">aryanwakilsamar@gmail.com</p>
+                <button onclick="copyEmail()" id="copy-button" class="bg-accent text-white font-semibold px-6 py-3 rounded-full hover:bg-accent-dark transition">Copy Email</button>
+            </div>
+            <div class="mt-8 flex justify-center gap-6">
+                <a href="https://linkedin.com/in/wthakur" class="text-slate-400 hover:text-white transition">LinkedIn</a>
+                <span class="text-slate-600">|</span>
+                <a href="https://your-portfolio-link.com" class="text-slate-400 hover:text-white transition">Portfolio Site</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function copyEmail() {
+            const emailText = document.getElementById('email-text').innerText;
+            const copyButton = document.getElementById('copy-button');
+            
+            const textArea = document.createElement('textarea');
+            textArea.value = emailText;
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                copyButton.innerText = 'Copied!';
+                setTimeout(() => {
+                    copyButton.innerText = 'Copy Email';
+                }, 2000);
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+            }
+            document.body.removeChild(textArea);
+        }
+
+        const menuBtn = document.getElementById('menu-btn');
+        const menu = document.getElementById('menu');
+        const menuLinks = menu.querySelectorAll('a');
+
+        menuBtn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menuBtn.classList.toggle('hamburger-open');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+                menuBtn.classList.remove('hamburger-open');
+            });
+        });
+    </script>
+
+</body>
+</html>
